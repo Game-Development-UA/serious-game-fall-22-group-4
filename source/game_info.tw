@@ -7,7 +7,7 @@
 }
 
 :: StoryTitle
-This is a detective game
+This is our detective game
 
 :: StoryInit
 <<set $myVariable to 1>>
