@@ -7,7 +7,7 @@
 }
 
 :: StoryTitle
-Group 4 
+My Twine Game
 
 :: StoryInit
 <<set $myVariable to 1>>
