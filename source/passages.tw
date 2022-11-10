@@ -1,11 +1,25 @@
 :: Start
-This is the first passage in your game with just one variable called myVariable that has a value of $myVariable.  There are two passages in this template, and the other can be found [[here|Passage 2]]
+It was a gloomy day in New York, the rain coming down like the bullets that were being shot at the troops over in Europe. I was in my office, having a smoke, wondering why I was not having any luck finding cases lately. Then she walked in, a tall brunette with looks that could kill. It seems that instead of me finding work, [[work|Passage 2]] had found me.
 
 :: Passage 2
-This is the casino
+“I hear you’re a detective,” she said, “and am I in need of your help right now. My husband’s been blown up.”
+I had known that the war in Europe was explosive, so I wasn’t surprised. I told her that I couldn’t help find out what happened to her husband, as he was killed by those damn fascist bastards, but I did tell her that the government offices were down the road about a mile away.
+“You’re not listening. He’s been blown up! Here, in New York! His car went up in flames over at the casino!” Her voice became more exasperated. “Please, I need your help! My husband, Giorgio Bernardi, is dead. The cops won’t do anything, they all think it’s a ploy to get him off of the Most Wanted list! He’s dead, I know it. I just need someone to find the scumbag who took him [[away|Passage 3]].”
 
 :: Passage 3
-This is also the casino
+Hearing this grown woman on the verge of tears, my heartstrings were pulled to the point of breaking. I knew I’d have to take this case, or have it eat away at my soul for the rest of the year.
+
+“I’ll do it. I’ll take the case. But it won’t be cheap.”
+
+	“How much are you looking for?”
+
+	“About five thousand.”
+
+	“T-that’s fine. I just want to find closure.”
+
+	“Then I’ll do it. Let’s find the guy who killed your husband.”
+
+Her eyes lit up like a lantern. “Thank you, Thank you! Here’s a warrant so you can get into the [[crime scene|Passage 4]].”
 
 :: Passage 4
 we will see
