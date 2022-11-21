@@ -24,32 +24,120 @@ Her eyes lit up like a lantern. “Thank you, Thank you! Here’s a warrant so y
 :: Passage 4
 travel to the casino and enter with options to 3 different areas
 
+[[Lobby|Passage 5]]
+
+[[Parking Garage|Passage 8]]
+
+[[Casino Floor|Passage 11]]
+
+[[Leave Casino|Passage 14]]
+
 :: Passage 5
 enter the lobby with pieces of evidence for the player to pick up and option to go to other areas or leave
+
+[[Business Card|Passage 6]]
+
+[[Lipstick|Passage 7]]
+
+[[Head back to entrance|Passage 4]]
 
 :: Passage 6
 pick up business card and add to inventory return to lobby in passage 5
 
+[[Continue Search|Passage 5]]
+
 :: Passage 7
 pick up lipstick and add to inventory return to lobby in passage 5
+
+[[Continue Search|Passage 5]]
 
 :: Passage 8
 enter the parking garage with pieces of evidence for the player to pick up and option to go to the other areas or leave
 
+[[Wrench|Passage 9]]
+
+[[Silver Key|Passage 10]]
+
+[[Head back to entrance|Passage 4]]
+
 :: Passage 9
 pick up the wrench and add to inventory return to garage
+
+[[Continue Search|Passage 8]]
 
 :: Passage 10
 pick up the silver key and add to inventory return to garage
 
+[[Continue Search|Passage 8]]
+
 :: Passage 11
 enter the casino floor with pieces of evidence for the player to pick up and option to go to the other areas or leave
+
+[[Lighter|Passage 12]]
+
+[[Photo|Passage 13]]
+
+[[Head back to entrance|Passage 4]]
 
 :: Passage 12
 pick up the lighter and add to inventory return to casino floor
 
+[[Continue Search|Passage 11]]
+
 :: Passage 13
 pick up the photo of the victim and add to inventory return to casino floor
 
+[[Continue Search|Passage 11]]
+
 :: Passage 14
 leave the casino and go back to office
+
+[[Look at evidence board|Passage 15]]
+
+:: Passage 15
+List off the evidence gathered and the places that can be visited based on the evidence gathered
+
+[[Don's Headquarters|Passage 16]]
+
+[[Rival Don's Headquarters|Passage 19]]
+
+[[Car Mechanic|Passage 18]]
+
+[[Casino|Passage 4]]
+
+:: Passage 16
+Get witness statements from the mafia members
+
+[[Witness 1|Passage 17]]
+
+[[Witness 2|Passage 18]]
+
+[[Head back to office|Passage 15]]
+
+:: Passage 17
+Get witness 1 statement
+
+[[Continue Search|Passage 16]]
+
+:: Passage 18
+Get witness 2 statement
+
+[[Continue Search|Passage 16]]
+
+:: Passage 19
+Get witness statement from the Mechanic
+
+[[Mechanic|Passage 20]]
+
+[[Head back to office|Passage 15]]
+
+:: Passage 20
+Gether intel about silver key and the docks
+
+[[Docks|Passage 21]]
+
+[[Head back to Office|Passage 15]]
+
+:: Passage 21
+
+[[]]
