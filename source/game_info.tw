@@ -10,4 +10,16 @@
 This is a detective game
 
 :: StoryInit
-<<set $mymoney to 1>>
+<<set $money to 1000>>
+<<set $card to 0>>
+<<set $lipstick to 0>>
+<<set $wrench to 0>>
+<<set $key to 0>>
+<<set $lighter to 0>>
+<<set $photo to 0>>
+<<set $followJuliet to 1>>
+<<set $pokerchip to 0>>
+<<set $searchArmaniEstate to 0>>
+<<set $searchBernardiHideout to 0>>
+<<set $searchJonesAuto to 0>>
+<<set $searchDoentApartment to 0>>

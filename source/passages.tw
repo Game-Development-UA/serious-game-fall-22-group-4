@@ -35,58 +35,58 @@ travel to the casino and enter with options to 3 different areas
 :: Passage 5
 enter the lobby with pieces of evidence for the player to pick up and option to go to other areas or leave
 
-[[Business Card|Passage 6]]
-
-[[Lipstick|Passage 7]]
+<<if $card == 0>>[[Business Card|Passage 6]]<</if>>
+<<if $lipstick == 0>>[[Lipstick|Passage 7]]<</if>>
+<<if $card == 1 and $lipstick == 1>>There is nothing left to search here<</if>>
 
 [[Head back to entrance|Passage 4]]
 
 :: Passage 6
 pick up business card and add to inventory return to lobby in passage 5
-
+<<set $card to 1>>
 [[Continue Search|Passage 5]]
 
 :: Passage 7
 pick up lipstick and add to inventory return to lobby in passage 5
-
+<<set $lipstick to 1>>
 [[Continue Search|Passage 5]]
 
 :: Passage 8
 enter the parking garage with pieces of evidence for the player to pick up and option to go to the other areas or leave
 
-[[Wrench|Passage 9]]
-
-[[Silver Key|Passage 10]]
+<<if $wrench == 0>>There is a [[wrench|Passage 9]] lying down next to the remains of the car.<</if>>
+<<if $key == 0>>[[key|Passage 10]]<</if>>
+<<if $wrench == 1 and $key == 1>>There is nothing left to search here<</if>>
 
 [[Head back to entrance|Passage 4]]
 
 :: Passage 9
 pick up the wrench and add to inventory return to garage
-
+<<set $wrench to 1>>
 [[Continue Search|Passage 8]]
 
 :: Passage 10
 pick up the silver key and add to inventory return to garage
-
+<<set $key to 1>>
 [[Continue Search|Passage 8]]
 
 :: Passage 11
 enter the casino floor with pieces of evidence for the player to pick up and option to go to the other areas or leave
 
-[[Lighter|Passage 12]]
-
-[[Photo|Passage 13]]
+<<if $lighter == 0>>There is a [[lighter|Passage 12]] lying down next to the remains of the car.<</if>>
+<<if $photo == 0>>[[photo|Passage 13]]<</if>>
+<<if $lighter == 1 and $photo == 1>>There is nothing left to search here<</if>>
 
 [[Head back to entrance|Passage 4]]
 
 :: Passage 12
 pick up the lighter and add to inventory return to casino floor
-
+<<set $lighter to 1>>
 [[Continue Search|Passage 11]]
 
 :: Passage 13
 pick up the photo of the victim and add to inventory return to casino floor
-
+<<set $photo to 1>>
 [[Continue Search|Passage 11]]
 
 :: Passage 14
@@ -97,13 +97,7 @@ leave the casino and go back to office
 :: Passage 15
 List off the evidence gathered and the places that can be visited based on the evidence gathered
 
-[[Don's Headquarters|Passage 16]]
-
-[[Rival Don's Headquarters|Passage 19]]
-
-[[Car Mechanic|Passage 18]]
-
-[[Casino|Passage 4]]
+<<if $searchArmaniEstate == 0>><<if $key == 1 and $card == 1>>This key and business card means I can search the [[Armani Household|Passage 16]] for more answers<<elseif $key == 1 and $card == 0>>This key likely opens up something at the [[Armani houshold|Passage 16]]<<elseif $key == 0 and $card == 1>>This card could link to more evidence from the [[Armani houshold|Passage 16]]<</if>><</if>>
 
 :: Passage 16
 Get witness statements from the mafia members
