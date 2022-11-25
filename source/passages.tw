@@ -136,6 +136,7 @@ sneak in and search her room to find hidden lockbox that a key opens.
 you head to the docks and scout it out but there are too many Armani guards to be able to investigate closely. I can try to [[sneak|Passage 21]] in or come back in the morning and ask around when there are workers around.
 
 :: Passage 21
+I have $money dollars to bribe with
 <<set $money to $money - 500>>\
 <<if $money >= 0>>Try [[disguise|Passage 22]] or [[bribe|Passage 23]] guards<<else>>[[leave|passage 24]]<</if>>
 
@@ -153,6 +154,7 @@ I don't think I can do anything else here at the docks
 :: Passage 25
 Following Juliet from the Armani estate, you quietly watch from a distance as she reaches the city square where a parade is taking place. You begin to lose her in the crowd, but just as she is about to disappear into the crowd you notice that she is with a man. This man is well dressed and looks to be a man of great wealth. You lose them in the [[crowd|Passage 26]].
 <<set $followJuliet to 2>>
+<<if $followJuliet == 2 and $followRomeo == 2>>[[Wait this seems familiar|Passage 37]]<</if>>
 
 :: Passage 26
 <<if $key == 1>>You decide to head back to the [[Armani estate|Passage 19]] to see what you can find there or [[head back to the office|Passage 27]]<<else>>[[head back to the office|Passage 27]]<</if>>
@@ -160,3 +162,73 @@ Following Juliet from the Armani estate, you quietly watch from a distance as sh
 :: Passage 27
 I think it will be difficult to try investigating the Armani family any further without drawing a lot of unneeded attention to myself, so I think I will look for some other [[leads|Passage 15]].
 <<set $searchArmaniEstate to 1>>
+
+:: Passage 28
+You decide to ask go to the bernardi hideout and seek the son of the Don to get more [[answers|Passage 29]].
+<<set $searchBernardiHideout to 1>>
+
+:: Passage 29
+Approaching the Bernardi Hideout, you notice that the door is heavily reinforced, with a window built into it. As you knock on the door, the window opens, and a raspy voice asks,
+
+“You got the [[password|Passage 30]], pal?”
+
+:: Passage 30
+You don’t have the password, but using your quick wit, you show him the evidence you have found by putting it up to the window.
+
+“How in the hell do you get your paws on that?! Get in here, flatfoot.”
+
+With a strong tug, both you and Mrs. Bernardi are dragged [[inside…|Passage 31]]
+
+:: Passage 31
+The smell of cigarettes fills the air, and there are two men playing billiards. You approach them with what you’ve found.
+
+“Who the hell are you? I ain’t see you around the hideout before.”
+
+“I’m a detective, here to investigate the murder of Giorgio Bernardi.”
+
+“Ah. Well then I guess you want some answers. Sorry pal, we ain’t going to be much help. The boss’s little princess might have some clues though.”
+
+Mrs. Bernardi’s face begins to fill with rage.
+
+“Who’s this ‘little princess’ you speak of”, she exclaims, “because I wasn’t aware of anyone else sleeping with my husband!”
+
+You see that Mrs. Bernardi may need some help coping with this new information, so you ask one of the associates to pour her a glass of wine. You then ask the other to take you to the mistress so you can get answers.
+
+<<if $lipstick == 1 and $photo == 1>>[[Meet the mistress|Passage 32]]<<elseif $lipstick == 1 and $photo == 0>>[[Meet the mistress|Passage 33]]<<elseif $lipstick == 0 and $photo == 1>>[[Meet the mistress|Passage 34]]<</if>>
+
+:: Passage 32
+Ask about the lipstick which is hers. She had been in the lobby and must have dropped it when startled by Mr. Armani. They talked and then he gave her buisness card that she did not want so just threw away.
+Then ask about photo and what the meaning of it was. She tells a bit of his backstory and then explains that the photo was one that she took of him but had lost recently.
+The [[Don's son|Passage 35]] enters the room
+
+:: Passage 33
+Ask about lipstick same story for lipstick from passage 32
+The [[Don's son|Passage 35]] enters the room
+
+:: Passage 34
+Ask about photo same story about photo from Passage 32
+The [[Don's son|Passage 35]] enters the room
+
+:: Passage 35
+Mistress notes that it is late even for him and he responds that he was out at the parade and that it is a week long event, then he states that he is going out to the parade again tomorrow night.
+You get more information on the relationship between the Armani and Bernardi families.
+You decide to come back the next night to investigate Romeo because there is something off about [[him|Passage 36]] or [[head back to the office|Passage 39]] to investigate other potential leads.
+
+:: Passage 36
+Follow him as he drives to the city center. Like he said there is a large parade. He begins to walk quickly through the crowd making it harder to follow. You notice that he is with a woman who you cannot make out, but you see Romeo hand her a rose. [[Well this is interesting|Passage 39]]
+<<set $followRomeo to 2>>
+<<if $followJuliet == 2 and $followRomeo == 2>>[[Wait this seems familiar|Passage 38]]<</if>>
+
+:: Passage 37
+You race through the croud to try to get a better glimps at the couple and you see it Romeo and Juliet are there together holding hands as they walk through the crowd. add more narration here.
+<<set $rAndj to 2>>
+[[This has been an interesting night|Passage 26]]
+
+:: Passage 38
+You race through the croud to try to get a better glimps at the couple and you see it Romeo and Juliet are there together holding hands as they walk through the crowd. add more narration here.
+<<set $rAndj to 2>>
+[[This has been an interesting night|Passage 39]]
+
+:: Passage 39
+I don't think that I should interfere in the Bernardi family business any further. I should look for a new lead.
+[[Return to office|Passage 15]]
