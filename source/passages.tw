@@ -232,3 +232,55 @@ You race through the croud to try to get a better glimps at the couple and you s
 :: Passage 39
 I don't think that I should interfere in the Bernardi family business any further. I should look for a new lead.
 [[Return to office|Passage 15]]
+
+:: Passage 40
+You decide to [[visit Jones' Automotive|Passage 41]] to see if the mechanic is responsible for tampering with Giorgio Bernardi's car.
+<<set $searchJonesAuto to 1>>
+
+:: Passage 41
+You pull up to Jones’ Automotive, and the working mechanic tells you that you’ll have to wait about 20 minutes if you want your car serviced. You explain why you are there, showing him the wrench you’ve found in the parking garage, and the mechanic says he’ll be with you as soon as he can. After about 10 minutes, he invites you into his workspace to [[talk|Passage 42]].
+
+:: Passage 42
+“Nice establishment  you got here, Mr Jones, but we both know why I’m here.”
+  
+“Your car needs a fixin?” 
+
+“Don’t play dumb with me, Jones.” 
+
+“What do you mean? I ain’t hidin’ nothing.”
+
+You present the wrench to Mr Jones.
+
+“Where’d ya find my lucky wrench? You some sorta thief?”
+
+“I’m a detective, Jones, and I’m here to question you on the killing of Giorgio Bernardi. This wrench was found next to the burnt wreck of his car.”
+
+“WHAT!! HOW?? I’ve been in my garage this entire time working on a customer’s car” 
+
+“Likely story Jones I know you had something to do with this” 
+
+“I had nothing to do with anything… I promise” 
+
+“Well, if you haven’t done anything then why was your “lucky” wrench at the scene of the crime”
+
+“Maybe somebody came and stole it and put it there!”
+
+You push the wrench into his stomach forcing him to let out a squeal.
+
+“This is the last time Jones,  WHY WAS YOUR WRENCH ON THE SCENE” 
+ 
+“OKAY…OKAY I’ll talk. I did not kill the poor man, I swear, but I saw him the other day when he brought his car in. I probably just dropped my wrench in the trunk when I did so.”
+
+“Was he with anybody when he brought his car in?” 
+
+“He was with his son. That’s the only thing I remember” 
+
+“Did they tell you anything else about their day”
+
+“No.. You know those mob guys never want to tell anybody their business” 
+
+[["Well they will tell me."|Passage 43]]
+
+:: Passage 43
+The mechanic took a while to break and tell the truth making him seem suspitious, though that could just be from fear of the local crime families breathing down his neck. I cannot rule him out of the investigation, but there might be some other people to investigate further.
+[[Return to office|Passage 15]]
