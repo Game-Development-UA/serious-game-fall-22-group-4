@@ -18,6 +18,8 @@ This is a detective game
 <<set $lighter to 0>>
 <<set $photo to 0>>
 <<set $followJuliet to 1>>
+<<set $followRomeo to 1>>
+<<set $rAndj to 1>>
 <<set $pokerchip to 0>>
 <<set $searchArmaniEstate to 0>>
 <<set $searchBernardiHideout to 0>>
