@@ -42,12 +42,12 @@ enter the lobby with pieces of evidence for the player to pick up and option to 
 [[Head back to entrance|Passage 4]]
 
 :: Passage 6
-pick up business card and add to inventory return to lobby in passage 5
+pick up business card and add to inventory 
 <<set $card to 1>>
 [[Continue Search|Passage 5]]
 
 :: Passage 7
-pick up lipstick and add to inventory return to lobby in passage 5
+pick up lipstick and add to inventory
 <<set $lipstick to 1>>
 [[Continue Search|Passage 5]]
 
@@ -61,12 +61,12 @@ enter the parking garage with pieces of evidence for the player to pick up and o
 [[Head back to entrance|Passage 4]]
 
 :: Passage 9
-pick up the wrench and add to inventory return to garage
+pick up the wrench and add to inventory
 <<set $wrench to 1>>
 [[Continue Search|Passage 8]]
 
 :: Passage 10
-pick up the silver key and add to inventory return to garage
+pick up the silver key and add to inventory
 <<set $key to 1>>
 [[Continue Search|Passage 8]]
 
@@ -80,12 +80,12 @@ enter the casino floor with pieces of evidence for the player to pick up and opt
 [[Head back to entrance|Passage 4]]
 
 :: Passage 12
-pick up the lighter and add to inventory return to casino floor
+pick up the lighter and add to inventory
 <<set $lighter to 1>>
 [[Continue Search|Passage 11]]
 
 :: Passage 13
-pick up the photo of the victim and add to inventory return to casino floor
+pick up the photo of the victim and add to inventory
 <<set $photo to 1>>
 [[Continue Search|Passage 11]]
 
