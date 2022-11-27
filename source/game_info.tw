@@ -25,3 +25,8 @@ This is a detective game
 <<set $searchBernardiHideout to 0>>
 <<set $searchJonesAuto to 0>>
 <<set $searchDoentApartment to 0>>
+<<set $visitPoliceStation to 0>>
+<<set $policeArmani to 0>>
+<<set $policeBernardi to 0>>
+<<set $policeJones to 0>>
+<<set $policeDoent to 0>>

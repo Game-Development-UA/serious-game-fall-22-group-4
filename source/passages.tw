@@ -98,6 +98,11 @@ leave the casino and go back to office
 List off the evidence gathered and the places that can be visited based on the evidence gathered
 
 <<if $searchArmaniEstate == 0>><<if $key == 1 and $card == 1>>This key and business card means I can search the [[Armani Household|Passage 16]] for more answers<<elseif $key == 1 and $card == 0>>This key likely opens up something at the [[Armani houshold|Passage 16]]<<elseif $key == 0 and $card == 1>>This card could link to more evidence from the [[Armani houshold|Passage 16]]<</if>><</if>>
+<<if $searchBernardiHideout == 0>><<if $lipstick == 1 and $photo == 1>>I could ask about the lipstick and get more information on Mr. Bernardi's background if I visit the [[Bernardi hideout|Passage 28]]<<elseif $lipstick == 1 and $photo == 0>>I could ask about the lipstick at the[[Bernardi hideout|Passage 28]]<<elseif $lipstick == 0 and $photo == 1>>I could get more information on Mr. Bernardi's background if I visit the [[Bernardi hideout|Passage 28]<</if>><</if>>
+<<if $searchJonesAuto == 0 and $wrench == 1>>I can see what the deal is with this [[wrench|Passage 40]] is.<</if>>
+<<if $searchDoentApartment == 0 and $lighter == 1>>I should find this [[Doent|Passage 44]] fella and ask him some questions about his relationship with Mr. Bernardi.<</if>>
+<<if $visitPoliceStation == 0>>[[Head to the police station|Passage 50]]<<else>>[[Head to the police station|Passage 52]]<</if>>
+[[I think I have enough evidence to determine the killer.|Passage 58]]
 
 :: Passage 16
 You decide to visit the Armani household to see if you can get more answers toward your investigation. You arrive at the household and walk up to the front door.
@@ -145,7 +150,9 @@ I have $money dollars to bribe with
 
 :: Passage 23
 Search and find designer poker chips, perhaps Juliet has more to do with this case than
+<<set $pokerchip to $pokerchip + 1>>
 [[head back to office|Passage 27]]<<if $followJuliet == 1>> or [[follow Juliet|Passage 25]]<</if>>
+<<if $pokerchip == 2>>[[I've seen these poker chips before|Passage 47]]<</if>>
 
 :: Passage 24
 I don't think I can do anything else here at the docks
@@ -284,3 +291,169 @@ You push the wrench into his stomach forcing him to let out a squeal.
 :: Passage 43
 The mechanic took a while to break and tell the truth making him seem suspitious, though that could just be from fear of the local crime families breathing down his neck. I cannot rule him out of the investigation, but there might be some other people to investigate further.
 [[Return to office|Passage 15]]
+
+:: Passage 44
+You decide to investigate [[John Doent|Passage 45]] to see if he commit the murder of Giorgio Bernardi at the casino.
+<<set $searchDoentApartment to 1>>
+
+:: Passage 45
+You knock on the door of 404 E. Goodman Place, one of many separate sections of the Goodman apartment complex. After a wait of about two minutes, a scrawny man with bags under his eyes comes to the door, and introduces himself as [[John Doent|Passage 46]].
+
+:: Passage 46
+“I d-don’t know w-what you’re talkin’ about, h-honest.”
+
+“Don’t play dumb with me, Doent. We found your lighter at the scene of the murder. Now talk.”
+
+“M-murder!?!?”
+
+His voice grew to a shrill cry, and he broke into tears. After about twenty minutes of wailing, he tells you his story of the day prior.
+
+After all of the tears, he gives you something he found on the ground while at the casino, and you bid him farewell.
+
+Seems that Mr. Doent is not the man you’re looking for, but the designer poker chip he has given you seems to be a clue to the true [[culprit…|Passage 49]]
+<<set $pokerchip to $pokerchip + 1>>
+<<if $pokerchip == 2>>[[I've seen these poker chips before|Passage 48]]<</if>>
+
+:: Passage 47
+John Doent gave me a designer poker chip and I found crates full of them at the docks being imported from out of the country. These chips are for the Bernardi controlled casino, but were being imported by Juliet Armani. It seems as though the Armani family was looking to undermine to Bernardi family to loosen their grip on the city. However, this could not be Juliet working on her own. She has to be working with somebody to complete this task.
+[[I should think on this some more.|Passage 24]]
+
+:: Passage 48
+John Doent gave me a designer poker chip and I found crates full of them at the docks being imported from out of the country. These chips are for the Bernardi controlled casino, but were being imported by Juliet Armani. It seems as though the Armani family was looking to undermine to Bernardi family to loosen their grip on the city. However, this could not be Juliet working on her own. She has to be working with somebody to complete this task.
+[[I should think on this some more.|Passage 49]]
+
+:: Passage 49
+If John Doent is not the guy that I'm looking for I should continue looking for leads back at [[the office.|Passage 15]]
+
+:: Passage 50
+You head to the police station to speak with the police chief to see if he might have any information that could prove useful toward your [[investigation|Passage 51]].
+<<set $visitPoliceStation to 1>>
+
+:: Passage 51
+You to follow him to the chief's office. You enter the office and introduce yourself the the chief who is sitting at his desk going through a bunch of paperwork.
+
+"What is it that you are here for?"
+
+"I came to see if you could help give me some information regarding the Bernardi murder at the casino"
+
+"Well I can't just give you information I have to get something in return. I know a lot about the past of this city and the background of the families and people they deal with, but I'm going to need payment for the information I give."
+
+"How much might that be?"
+
+"I'll tell you what, you tell me who you want to know more about, and I can tell you all I know about them for 250 dollars each."
+
+This price is a bit much, but it is a chance for you to get more Information that could be useful for your [[investigation|Passage 52]].
+
+:: Passage 52
+"So, who do you need information about?"
+
+You have $money
+
+<<if $searchArmaniEstate == 1 and $policeArmani == 0 and $money >= 250>>[[The Armani family|Passage 53]]<</if>>
+<<if $searchBernardiHideout == 1 and $policeBernardi == 0 and $money >= 250>>[[The Bernardi family|Passage 54]]<</if>>
+<<if $searchJonesAuto == 1 and $policeJones == 0 and $money >= 250>>[[Mr. Jones|Passage 55]]<</if>>
+<<if $searchDoentApartment == 1 and $policeDoent == 0 and $money >= 250>>[[Mr. Doent|Passage 56]]<</if>>
+<<if $pokerchip == 2>>[[Designer pokerchips|Passage 57]]<</if>>
+
+[[Head back to the office|Passage 15]]
+
+:: Passage 53
+The Armani family was the original crime family of the city. They were here first and controlled every underground crime ring in the city. Then they lost power when the Bernardi family stormed in and began taking their business interests one by one until the Bernardi family became the most powerful crime organization in the city. Leonardo Armani watched his empire get taken down, and he even lost the casino to Giorgio Bernardi, one of his favorite interests that he controlled. It would make sense for him to be mad, but these families have complicated history. Leonardo and Giorgio were childhood friends, and they grew up close under Leonardo's father when he led the Armani family. I could see Leonardo getting upset at all of his losses, but I do not think that he is responsible for the murder. Juliet on the other hand has always been a wild case. One time she ordered some men to kill a man just because they talked inappropriately about her to her face. Leonardo has had trouble controlling her especially after the passing of his wife and her mother. That is about all I can tell you about the [[Armani family|Passage 52]].
+<<set $policeArmani to 1>>
+<<set $money to $money - 250>>
+
+:: Passage 54
+The Bernardi family is a relatively new and powerful crime organization. Giorgio and Leonardo practically ran the Armani family together, but there was a falling out. There were arguments and Giorgio stepped away from the Armani family to form his own. Leonardo held no grudges because they were childhood friends. Knowing what he knew from being with the Armani family, Giorgio began to take over the criminal underworld quickly. He soon gained control of the casino which was Leonardo's favorite interest in the city. Either way the bosses did not have much trouble with each other despite them being rivals and all. I know that Marzia Bernardi, Giorgio's wife, was trying to get Giorgio to get out to crime while he still coulld and take care of her and his son. She had been holding the family together on her own because Giorgio and his son Romeo would constantly fight over their interests and these situations often ended violently. I imagine that family has issues, but I suppose there is not much that can be done for them now that he is [[dead|Passage 52]].
+<<set $policeBernardi to 1>>
+<<set $money to $money - 250>>
+
+:: Passage 55
+Ah, the city mechanic. You know he overcharges for everything. It makes sense why he is able to buy an new car every week, at least that's what it seems like anyway. Anyway, he has been in trouble with the law in the past, but it is nothing to the degree of murder. It has mostly just been for speeding and other illegal driving. The worst was a case of his and run, but that case was nonlethal. Sure he might have tampered with the car, but he would do so in order to get them to come back in to get it fixed again not to blow up out of no where. I might understand he might do so if he was in debt to the family and had trouble with them, but to my knowledge he was not in debt with the family, so I don't think he had any motive to commit the [[murder|Passage 52]].
+<<set $policeJones to 1>>
+<<set $money to $money - 250>>
+
+:: Passage 56
+Doent, huh. He's had trouble in the past. It was mostly from small thefts to make quick money and avoiding loan payments for the bank. Now though he seems to be getting better. He still has a gambling addiction, and, from what I can tell, he had been borrowing from the Bernardi family to pay for his gambling addiction for some time. It could possibly been [[him|Passage 52]], but I know that he has a family to care for now and I don't think he would want to put them in any danger.
+<<set $policeDoent to 1>>
+<<set $money to $money - 250>>
+
+:: Passage 57
+These chips belong to the Armani family and were used in the casino when it was under their control. Of course the Bernardi family took control of the casino and still hold control over it today. If they are being imported to the city then this could mean that the Armani family is trying to undermine the Bernardi family and weaken their control of the casino. It is strange though because I did not think that Leonardo would kill Giorgio or do anything like this to him even after all that has happened. Perhaps it could be someone else who is pulling the strings, or maybe it is Leonardo getting back at Giorgio for what has happened in their [[past|Passage 52]].
+
+:: Passage 58
+You have come to the conclution that the killer is...
+[[Leonardo Armani|Passage 59]]
+[[Romeo Bernardi|Passage 61]]
+[[Juliet Armani|Passage 63]]
+[[Mistress of Mr. Bernardi|Passage 65]]
+[[John Doent|Passage 67]]
+[[David Jones|Passage 69]]
+
+:: Passage 59
+Here is the evidence you've gathered...
+<<if $card == 1>>His business card was at the casino, so he was there at the time of the murder.<</if>>
+<<if $searchArmaniEstate == 1>>The Armani family acted suspictiously when questioned about the murder of Giorgio Bernnardi.<</if>>
+<<if $pokerchip == 2>>The Armani family is importing poker chips that could cause the Bernardi family to lose money at the casino.<</if>>
+<<if $policeArmani == 1>>Leonardo has a probable motive for the murder making it likely that he did commit the hit.<</if>>
+[[Inform the police of your findings|Passage 60]]
+
+:: Passage 60
+After an intense investigation into the case, the police have determined that Leonardo Armani was not responsible for the murder of Giorgio Bernardi. While the motive for the murder might have been possible all of the evidence stacked against him when his story was told and confirmed. While he was at the casino at the time of the murder, neither he nor his crew had entered the parking garage at anytime. 
+This case did not go as planned. Maybe you could try again and come to a different conclution.
+
+:: Passage 61
+Here is the evidence you've gathered...
+<<if $rAndj == 2 and $pokerchip == 2>>With the help of Juliet Armani, Romeo was able to distract his father with the loss of money at the casino.<</if>>
+<<if $searchJonesAuto == 1 and $wrench == 1>>Romeo stole the wrench from Jones and used it to tamper with the car.<</if>>
+<<if $key == 2 and $rAndj == 2>>Romeo and Juliet were planning to flee the country together.<</if>>
+<<if $visitBernardiHideout == 1 and $photo == 1>>Romeo stole the photo of Giorgio from the mistress and left it on the casino floor to throw blame.<</if>>
+<<if $policeBernardi == 1>>Romeo had a complicated past with his father and led to him wanting to get his father out of the way.<</if>>
+[[Inform the police of your findings|Passage 62]]
+
+:: Passage 62
+After an intense investigation into the case, the police have determined that Romeo Bernardi was in fact responsible for the murder of Giorgio Bernardi.
+Congradulations on a well solved case. Now it's time to get to the next case.
+
+:: Passage 63
+Here is the evidence you've gathered...
+<<if $rAndj == 2 and $pokerchip == 2>>Juliet used Romeo to get close to the family and convinced him to let her weaaken his family's control over the casino.<</if>>
+<<if $key == 2>>She was trying to flee the country.<</if>>
+<<if $policeArmani == 1>>She has been acting erratically ever since the passing of her mother.<</if>>
+<<if $visitArmaniEstate == 1>>She was acting strange when I asked about the murder of Giorgio.<</if>>
+[[Inform the police of your findings|Passage 64]]
+
+:: Passage 64
+After an intense investigation into the case, the police have determined that Juliet Armani was not responsible for the murder of Giorgio Bernardi. While she was involved in some illegal activity with the chips at the casino, she did not commit the murder.
+This case did not go as planned. Maybe you could try again and come to a different conclution.
+
+:: Passage 65
+Here is the evidence you've gathered...
+<<if $lipstick == 1>>Her lipstick was found at the casino and she was present at the time of the murder.<</if>>
+<<if $visitBernardiHideout == 1>>She seems to have a sense of control in the Bernardi family, even more so than Marzia Bernardi, Giorgio's wife.<</if>>
+<<if $photo == 1 and $visitBernardiHideout == 1>>She claimed to have lost the photo of Giogio Bernardi, but it was found at the casino with burns from cigars.<</if>>
+[[Inform the police of your findings|Passage 66]]
+
+:: Passage 66
+After an intense investigation into the case, the police have determined that the mistress of Mr. Bernardi was not responsible for the murder of Giorgio Bernardi. While she seems to have a new position in the family, she had no other motives than to gain power. She also apparently lost the photo a week before the murder took place.
+This case did not go as planned. Maybe you could try again and come to a different conclution.
+
+:: Passage 67
+Here is the evidence you've gathered...
+<<if $lighter == 1>>His lighter was present at the casino and could have been used to commit the crime.<</if>>
+<<if $policeDoent == 1>>The police said that he has had a gambling addiction for a while and had borrowed money from the Bernardi family.<</if>>
+[[Inform the police of your findings|Passage 68]]
+
+:: Passage 68
+After an intense investigation into the case, the police have determined that John Doent was not responsible for the murder of Giorgio Bernardi. While he had borrowed money from the Bernardi family in the past he had been making regular payments to the family and had not trouble with his finances. He still gambles and was at the casino at the time of the murder, but he was not responsible for the killing.
+This case did not go as planned. Maybe you could try again and come to a different conclution.
+
+:: Passage 69
+Here is the evidence you've gathered...
+<<if $visitJonesAuto == 1>>Jones could have tampered with the car when Giorgio visited for a checkup on his car.<</if>>
+<<if $wrench == 1>>Jones could have tampered with the car at the casino.<</if>>
+<<if $policeJones == 1>>The police stated that he could have tampered with the car even if it was unlikely for him to do so.<</if>>
+[[Inform the police of your findings|Passage 70]]
+
+:: Passage 70
+After an intense investigation into the case, the police have determined that David Jones was not responsible for the murder of Giorgio Bernardi. Sure charging a high rate for checkups should be a crime, but Jones had no part in the crime commited at the casino. While he had done some work on the car a few days before the killing, he was more worried about working on cars. It became tough for him especially since he was missing his wrench.
+This case did not go as planned. Maybe you could try again and come to a different conclution.
