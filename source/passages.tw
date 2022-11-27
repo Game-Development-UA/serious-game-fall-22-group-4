@@ -33,7 +33,7 @@ travel to the casino and enter with options to 3 different areas
 [[Leave Casino|Passage 14]]
 
 :: Passage 5
-enter the lobby with pieces of evidence for the player to pick up and option to go to other areas or leave
+You enter the Lobby
 
 <<if $card == 0>>[[Business Card|Passage 6]]<</if>>
 <<if $lipstick == 0>>[[Lipstick|Passage 7]]<</if>>
@@ -42,17 +42,17 @@ enter the lobby with pieces of evidence for the player to pick up and option to 
 [[Head back to entrance|Passage 4]]
 
 :: Passage 6
-pick up business card and add to inventory 
+Pick up the Business Card
 <<set $card to 1>>
 [[Continue Search|Passage 5]]
 
 :: Passage 7
-pick up lipstick and add to inventory
+Pick up the Lipstick
 <<set $lipstick to 1>>
 [[Continue Search|Passage 5]]
 
 :: Passage 8
-enter the parking garage with pieces of evidence for the player to pick up and option to go to the other areas or leave
+You enter the Parking Garage
 
 <<if $wrench == 0>>There is a [[wrench|Passage 9]] lying down next to the remains of the car.<</if>>
 <<if $key == 0>>[[key|Passage 10]]<</if>>
@@ -61,17 +61,17 @@ enter the parking garage with pieces of evidence for the player to pick up and o
 [[Head back to entrance|Passage 4]]
 
 :: Passage 9
-pick up the wrench and add to inventory
+Pick up the Wrench
 <<set $wrench to 1>>
 [[Continue Search|Passage 8]]
 
 :: Passage 10
-pick up the silver key and add to inventory
+Pick up the Silver Key
 <<set $key to 1>>
 [[Continue Search|Passage 8]]
 
 :: Passage 11
-enter the casino floor with pieces of evidence for the player to pick up and option to go to the other areas or leave
+Enter the Casino Floor
 
 <<if $lighter == 0>>There is a [[lighter|Passage 12]] lying down next to the remains of the car.<</if>>
 <<if $photo == 0>>[[photo|Passage 13]]<</if>>
@@ -80,17 +80,17 @@ enter the casino floor with pieces of evidence for the player to pick up and opt
 [[Head back to entrance|Passage 4]]
 
 :: Passage 12
-pick up the lighter and add to inventory
+Pick up the Lighter
 <<set $lighter to 1>>
 [[Continue Search|Passage 11]]
 
 :: Passage 13
-pick up the photo of the victim and add to inventory
+Pick up the Photo of the Victim
 <<set $photo to 1>>
 [[Continue Search|Passage 11]]
 
 :: Passage 14
-leave the casino and go back to office
+Leave the casino and go back to office
 
 [[Look at evidence board|Passage 15]]
 
