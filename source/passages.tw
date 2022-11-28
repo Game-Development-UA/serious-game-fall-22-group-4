@@ -73,7 +73,7 @@ Pick up the Silver Key
 :: Passage 11
 Enter the Casino Floor
 
-<<if $lighter == 0>>There is a [[lighter|Passage 12]] lying down next to the remains of the car.<</if>>
+<<if $lighter == 0>>There is a [[lighter|Passage 12]] lying down next to the Blackjack Tables.<</if>>
 <<if $photo == 0>>[[photo|Passage 13]]<</if>>
 <<if $lighter == 1 and $photo == 1>>There is nothing left to search here<</if>>
 
@@ -264,7 +264,7 @@ You present the wrench to Mr Jones.
 
 “WHAT!! HOW?? I’ve been in my garage this entire time working on a customer’s car” 
 
-“Likely story Jones I know you had something to do with this” 
+“Likely story, Jones. I know you had something to do with this” 
 
 “I had nothing to do with anything… I promise” 
 
@@ -455,5 +455,5 @@ Here is the evidence you've gathered...
 [[Inform the police of your findings|Passage 70]]
 
 :: Passage 70
-After an intense investigation into the case, the police have determined that David Jones was not responsible for the murder of Giorgio Bernardi. Sure charging a high rate for checkups should be a crime, but Jones had no part in the crime commited at the casino. While he had done some work on the car a few days before the killing, he was more worried about working on cars. It became tough for him especially since he was missing his wrench.
+After an intense investigation into the case, the police have determined that David Jones was not responsible for the murder of Giorgio Bernardi. Sure charging a high rate for car maintenance should be a crime, but Jones had no part in the crime commited at the casino. While he had done some work on the car a few days before the killing, he was more worried about working on cars. It became tough for him especially since he was missing his wrench.
 This case did not go as planned. Maybe you could try again and come to a different conclution.
