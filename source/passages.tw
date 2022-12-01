@@ -389,6 +389,8 @@ You have come to the conclution that the killer is...
 [[John Doent|Passage 67]]
 [[David Jones|Passage 69]]
 
+[[Well... Maybe I should look for some more evidence|Passage 15]]
+
 :: Passage 59
 Here is the evidence you've gathered...
 <<if $card == 1>>His business card was at the casino, so he was there at the time of the murder.<</if>>
