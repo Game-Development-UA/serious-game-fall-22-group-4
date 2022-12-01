@@ -74,18 +74,18 @@ You pick up the Silver Key.
 Enter the Casino Floor
 
 <<if $lighter == 0>>There is a [[lighter|Passage 12]] lying down next to the Blackjack Tables.<</if>>
-<<if $photo == 0>>[[photo|Passage 13]]<</if>>
+<<if $photo == 0>>There is a [[photo|Passage 13]] of Giorgio Bernardi lying on the poker table.<</if>>
 <<if $lighter == 1 and $photo == 1>>There is nothing left to search here<</if>>
 
 [[Head back to entrance|Passage 4]]
 
 :: Passage 12
-Pick up the Lighter
+You pick up the Lighter and notice initials on it that read "JD". It belongs to John Doent.
 <<set $lighter to 1>>
 [[Continue Search|Passage 11]]
 
 :: Passage 13
-Pick up the Photo of the Victim
+You pick up the Photo of the Victim.
 <<set $photo to 1>>
 [[Continue Search|Passage 11]]
 
