@@ -7,7 +7,7 @@
 }
 
 :: StoryTitle
-This is a detective game
+Sleep with the Fishes
 
 :: StoryInit
 <<set $money to 1000>>
