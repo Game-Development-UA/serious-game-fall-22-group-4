@@ -33,40 +33,40 @@ travel to the casino and enter with options to 3 different areas
 [[Leave Casino|Passage 14]]
 
 :: Passage 5
-You enter the Lobby
+You enter the Lobby of the casino.
 
-<<if $card == 0>>[[Business Card|Passage 6]]<</if>>
-<<if $lipstick == 0>>[[Lipstick|Passage 7]]<</if>>
+<<if $card == 0>>There is [[Business Card|Passage 6]] that reads Leonardo Armani.<</if>>
+<<if $lipstick == 0>>There is [[Lipstick|Passage 7]] lying on a table. It looks fancy and expensive. It is the same kind that Giorgio would buy for people he cared about.<</if>>
 <<if $card == 1 and $lipstick == 1>>There is nothing left to search here<</if>>
 
 [[Head back to entrance|Passage 4]]
 
 :: Passage 6
-Pick up the Business Card
+You pick up the Business Card.
 <<set $card to 1>>
 [[Continue Search|Passage 5]]
 
 :: Passage 7
-Pick up the Lipstick
+You pick up the Lipstick.
 <<set $lipstick to 1>>
 [[Continue Search|Passage 5]]
 
 :: Passage 8
-You enter the Parking Garage
+You enter the Parking Garage of the casino.
 
 <<if $wrench == 0>>There is a [[wrench|Passage 9]] lying down next to the remains of the car.<</if>>
-<<if $key == 0>>[[key|Passage 10]]<</if>>
+<<if $key == 0>>There is a small silver [[key|Passage 10]]. It looks like it can open a small lock box.<</if>>
 <<if $wrench == 1 and $key == 1>>There is nothing left to search here<</if>>
 
 [[Head back to entrance|Passage 4]]
 
 :: Passage 9
-Pick up the Wrench
+You pick up the Wrench and notice initials on the handle that read "DJ". It belongs to David Jones, the local mechanic.
 <<set $wrench to 1>>
 [[Continue Search|Passage 8]]
 
 :: Passage 10
-Pick up the Silver Key
+You pick up the Silver Key.
 <<set $key to 1>>
 [[Continue Search|Passage 8]]
 
@@ -74,18 +74,18 @@ Pick up the Silver Key
 Enter the Casino Floor
 
 <<if $lighter == 0>>There is a [[lighter|Passage 12]] lying down next to the Blackjack Tables.<</if>>
-<<if $photo == 0>>[[photo|Passage 13]]<</if>>
+<<if $photo == 0>>There is a [[photo|Passage 13]] of Giorgio Bernardi lying on the poker table.<</if>>
 <<if $lighter == 1 and $photo == 1>>There is nothing left to search here<</if>>
 
 [[Head back to entrance|Passage 4]]
 
 :: Passage 12
-Pick up the Lighter
+You pick up the Lighter and notice initials on it that read "JD". It belongs to John Doent.
 <<set $lighter to 1>>
 [[Continue Search|Passage 11]]
 
 :: Passage 13
-Pick up the Photo of the Victim
+You pick up the Photo of the Victim.
 <<set $photo to 1>>
 [[Continue Search|Passage 11]]
 
@@ -388,6 +388,8 @@ You have come to the conclution that the killer is...
 [[Mistress of Mr. Bernardi|Passage 65]]
 [[John Doent|Passage 67]]
 [[David Jones|Passage 69]]
+
+[[Well... Maybe I should look for some more evidence|Passage 15]]
 
 :: Passage 59
 Here is the evidence you've gathered...
